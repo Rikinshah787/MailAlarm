@@ -1,0 +1,73 @@
+{
+  "isStopped": false,
+  "stoppedAt": null,
+  "startedAt": "2025-12-23T09:04:34.568Z",
+  "callLogs": [
+    {
+      "senderEmail": "rikinshah787@gmail.com",
+      "subject": "Important activity",
+      "callSid": "CA6182fb202b54423bdd19748cfb8c7693",
+      "calledAt": "2025-12-23T08:58:18.239Z"
+    },
+    {
+      "senderEmail": "rikinshah787@gmail.com",
+      "subject": "Important activity",
+      "callSid": "CA69f82601d503cb6ea51bd48626095222",
+      "calledAt": "2025-12-23T08:57:48.257Z"
+    },
+    {
+      "senderEmail": "rikinshah787@gmail.com",
+      "subject": "Testing 199",
+      "callSid": "CAce2d0f27584f78572095aebcfcd36bcb",
+      "calledAt": "2025-12-23T08:35:47.907Z"
+    },
+    {
+      "senderEmail": "rikinshah787@gmail.com",
+      "subject": "Testing 199",
+      "callSid": "CAce2f67d458706a2cc9e74c23e168acf5",
+      "calledAt": "2025-12-23T08:35:17.891Z"
+    },
+    {
+      "senderEmail": "rikinshah787@gmail.com",
+      "subject": "Test Important Email",
+      "callSid": "CA30b2a837fde17930bb6b665a8ce3520c",
+      "calledAt": "2025-12-23T08:32:27.718Z"
+    },
+    {
+      "senderEmail": "rikinshah787@gmail.com",
+      "subject": "Test Important Email",
+      "callSid": "CAde16a1d7448f100667aa14f79df9a2bf",
+      "calledAt": "2025-12-23T08:31:57.746Z"
+    },
+    {
+      "senderEmail": "test@example.com",
+      "subject": "Test Call",
+      "callSid": "CAa04bbd962bc0881a7cd2a4cb9218249a",
+      "calledAt": "2025-12-23T07:31:34.109Z"
+    },
+    {
+      "senderEmail": "test@example.com",
+      "subject": "Test Call",
+      "callSid": "CA65e0f8605b39bce0f91d5e8eef778276",
+      "calledAt": "2025-12-23T07:31:04.065Z"
+    },
+    {
+      "senderEmail": "test@example.com",
+      "subject": "Test Call",
+      "callSid": "CAc9f70756cc31172d26d9b18f2f6b973e",
+      "calledAt": "2025-12-23T07:30:34.065Z"
+    },
+    {
+      "senderEmail": "test@example.com",
+      "subject": "Test Call",
+      "callSid": "CA7b0af20807b41323a0927409afccde9f",
+      "calledAt": "2025-12-23T07:30:04.128Z"
+    },
+    {
+      "senderEmail": "test@example.com",
+      "subject": "Test Call",
+      "callSid": "CAa57a792518b361a3fe96d6af3208f774",
+      "calledAt": "2025-12-23T07:29:34.164Z"
+    }
+  ]
+}
