@@ -139,6 +139,19 @@ Open **http://localhost:3000** 🎉
 4. Add your environment variables
 5. Set `APP_URL` to your Railway URL (for phone keypad to work)
 
+### 🔄 Keep App Running 24/7 (Important!)
+
+Railway's free tier may sleep your app after inactivity. **Use UptimeRobot to keep it alive:**
+
+1. Sign up at [uptimerobot.com](https://uptimerobot.com) (free)
+2. Create new monitor:
+   - **Monitor Type:** HTTP(s)
+   - **URL:** `https://your-app.railway.app/status`
+   - **Interval:** 5 minutes
+3. Save — your app now stays awake 24/7!
+
+> 💡 UptimeRobot pings your app every 5 minutes, preventing Railway from sleeping it.
+
 ---
 
 ## 🔧 API Reference
