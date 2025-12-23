@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Never Miss Email - Stop Notifications</title>
+  <title>MailAlarm - Get called when it matters</title>
   <style>
     * {
       margin: 0;
@@ -40,8 +41,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
     }
 
     h1 {
@@ -99,8 +107,15 @@
     }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
     }
 
     .input-group {
@@ -219,11 +234,12 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="logo">📧</div>
-    <h1>Never Miss Email</h1>
-    <p class="subtitle">Important email notification system</p>
+    <div class="logo">🔔</div>
+    <h1>MailAlarm</h1>
+    <p class="subtitle">Get called when it matters</p>
 
     <div id="statusBadge" class="status-badge status-active">
       <span class="pulse-dot active"></span>
@@ -232,13 +248,7 @@
 
     <div class="input-group">
       <label for="stopCode">Enter Stop Code</label>
-      <input 
-        type="text" 
-        id="stopCode" 
-        maxlength="3" 
-        placeholder="•••"
-        autocomplete="off"
-      >
+      <input type="text" id="stopCode" maxlength="3" placeholder="•••" autocomplete="off">
     </div>
 
     <button id="stopBtn" class="btn btn-stop" onclick="stopNotifications()">
@@ -257,7 +267,7 @@
 
     <div class="info">
       <p><strong>How it works:</strong></p>
-      <p>Enter <strong>199</strong> to stop incoming calls when you receive an important email notification.</p>
+      <p>Enter <strong>199</strong> to stop calls. You can also press 199 on your phone keypad during a call.</p>
     </div>
   </div>
 
@@ -312,7 +322,7 @@
 
     async function stopNotifications() {
       const code = codeInput.value;
-      
+
       try {
         const res = await fetch('/stop', {
           method: 'POST',
@@ -320,10 +330,10 @@
           body: JSON.stringify({ code })
         });
         const data = await res.json();
-        
+
         showMessage(data.message, data.ok ? 'success' : 'error');
         codeInput.value = '';
-        
+
         if (data.ok) {
           checkStatus();
         }
@@ -339,7 +349,7 @@
           headers: { 'Content-Type': 'application/json' }
         });
         const data = await res.json();
-        
+
         showMessage(data.message, 'success');
         checkStatus();
       } catch (err) {
@@ -354,7 +364,7 @@
           headers: { 'Content-Type': 'application/json' }
         });
         const data = await res.json();
-        
+
         showMessage(data.message, data.ok ? 'success' : 'error');
         checkStatus();
       } catch (err) {
@@ -366,11 +376,12 @@
       messageDiv.textContent = text;
       messageDiv.className = `message ${type}`;
       messageDiv.classList.remove('hidden');
-      
+
       setTimeout(() => {
         messageDiv.classList.add('hidden');
       }, 5000);
     }
   </script>
 </body>
+
 </html>

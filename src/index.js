@@ -3,14 +3,19 @@ const { initTwilio } = require('./phoneService');
 const { startServer } = require('./api');
 const { initEmailMonitor } = require('./emailMonitor');
 
-console.log('═══════════════════════════════════════════════════════════');
-console.log('        📧 NEVER MISS IMPORTANT EMAIL - Starting...        ');
-console.log('═══════════════════════════════════════════════════════════\n');
+console.log('');
+console.log('  ╔══════════════════════════════════════════════════════════╗');
+console.log('  ║                                                          ║');
+console.log('  ║   🔔  M A I L A L A R M                                  ║');
+console.log('  ║       "Get called when it matters"                       ║');
+console.log('  ║                                                          ║');
+console.log('  ╚══════════════════════════════════════════════════════════╝');
+console.log('');
 
 // Validate configuration
 const isValid = validateConfig();
 if (!isValid) {
-    console.log('\n⚠️  Running in demo mode (no calls will be made)');
+    console.log('⚠️  Running in demo mode (no calls will be made)');
     console.log('   Set up your .env file for full functionality.\n');
 }
 
@@ -31,6 +36,8 @@ initEmailMonitor().then(connected => {
     }
 });
 
-console.log('═══════════════════════════════════════════════════════════');
-console.log('                   Ready to protect you!                    ');
-console.log('═══════════════════════════════════════════════════════════\n');
+console.log('');
+console.log('  ═══════════════════════════════════════════════════════════');
+console.log('         🚀 MailAlarm is ready to protect you!');
+console.log('  ═══════════════════════════════════════════════════════════');
+console.log('');

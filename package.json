@@ -1,7 +1,7 @@
 {
-  "name": "emailguard",
+  "name": "mailalarm",
   "version": "1.0.0",
-  "description": "Get phone calls for important emails until you enter stop code 199",
+  "description": "Get called when it matters - Phone calls for important emails",
   "main": "src/index.js",
   "engines": {
     "node": ">=18.0.0"
